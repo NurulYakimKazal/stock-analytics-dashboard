@@ -10,7 +10,7 @@ The system transforms daily market data into structured insights through an end-
 
 The dashboard is deployed and accessible online:
 
-👉 **[Launch Stock Analytics Dashboard](YOUR_STREAMLIT_APP_URL)**
+👉 **[Launch Stock Analytics Dashboard](https://my-stock-analytics-dashboard.streamlit.app/)**
 
 ---
 
