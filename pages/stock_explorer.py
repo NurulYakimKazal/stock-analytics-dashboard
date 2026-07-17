@@ -4,6 +4,7 @@ from modules.charts.historical_price_chart import plot_historical_price
 from modules.kpis.stock_explorer_kpis import compute_stock_explorer_kpis
 from modules.utils.spacer import spacer
 from modules.utils.no_data_warning import show_no_stock_data_warning
+from components.footer import render_footer
 
 
 def stock_explorer(stock_df, stock_kpis):
@@ -81,6 +82,8 @@ def stock_explorer(stock_df, stock_kpis):
                 width='stretch',
                 hide_index=True,
             )
+
+    render_footer()
 
 
 

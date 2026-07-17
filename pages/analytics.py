@@ -8,6 +8,8 @@ from modules.charts.trend_indicators_chart import plot_trend_indicators
 from modules.charts.volume_activity_chart import plot_volume_activity
 from modules.utils.no_data_warning import show_no_stock_data_warning
 from modules.reports.descriptive_statistics import compute_descriptive_statistics
+from components.footer import render_footer
+
 
 def analytics(company_df, stock_df, performance_kpis, risk_kpis):
 
@@ -191,6 +193,8 @@ def analytics(company_df, stock_df, performance_kpis, risk_kpis):
                 width="stretch",
                 hide_index=True,
             )
+
+    render_footer()
 
 
 

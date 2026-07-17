@@ -52,7 +52,7 @@ def generate_pdf_report(
     )
 
     story.append(
-        Spacer(1, 12)
+        Spacer(1, 10)
     )
 
 
@@ -87,7 +87,7 @@ def generate_pdf_report(
     )
 
     story.append(
-        Spacer(1, 15)
+        Spacer(1, 5)
     )
 
 
@@ -187,6 +187,20 @@ def generate_pdf_report(
     add_dataframe(
         story,
         descriptive_stats
+    )
+
+    story.append(
+        Spacer(1, 5)
+    )
+
+    story.append(
+        Paragraph(
+            "Data Source: Yahoo Finance (yfinance). "
+            "Historical stock prices, trading volume, and company information "
+            "are retrieved through the yfinance Python library. "
+            "Data availability and accuracy are subject to Yahoo Finance services.",
+            styles["BodyText"],
+        )
     )
 
 

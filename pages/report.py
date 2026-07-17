@@ -6,9 +6,11 @@ from modules.kpis.stock_explorer_kpis import compute_stock_explorer_kpis
 from modules.kpis.performance_overview_kpis import compute_performance_overview_kpis
 from modules.kpis.risk_analysis_kpis import compute_risk_analysis_kpis
 from modules.reports.descriptive_statistics import compute_descriptive_statistics
+from components.footer import render_footer
 
 from modules.utils.spacer import spacer
 from modules.reports.pdf_report import generate_pdf_report
+
 
 
 # =========================================================
@@ -268,3 +270,5 @@ st.download_button(
     file_name=f"{company_kpis_data['company']['ticker']}_stock_report.pdf",
     mime="application/pdf",
 )
+
+render_footer()
