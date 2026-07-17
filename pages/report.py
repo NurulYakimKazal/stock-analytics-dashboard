@@ -219,11 +219,23 @@ def show_stock_report(
 # PAGE EXECUTION
 # =========================================================
 
-company_df = st.session_state.company_df
-stock_dataframe = st.session_state.stock_df
+company_df = st.session_state.get("company_df")
+stock_dataframe = st.session_state.get("stock_df")
 
-start_date = st.session_state.start_date
-end_date = st.session_state.end_date
+start_date = st.session_state.get("start_date")
+end_date = st.session_state.get("end_date")
+
+
+if (
+    company_df is None
+    or stock_dataframe is None
+    or start_date is None
+    or end_date is None
+):
+    st.warning(
+        "Stock data or date range is unavailable. Please select a ticker first."
+    )
+    st.stop()
 
 company_kpis_data = compute_stock_explorer_kpis(
     company_df
