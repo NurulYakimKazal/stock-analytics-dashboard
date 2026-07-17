@@ -110,7 +110,7 @@ Streamlit Dashboard Layer
 * Trading volume analysis
 * Historical price exploration
 
-### 📈 Performance Analytics
+### 📈 Performance Analysis
 
 * Total return calculation
 * Average daily return
@@ -304,12 +304,14 @@ Performance, risk, trend, volume, and statistical analysis.
 
 ![Analytics 1](assets/analytics_1.png)
 ![Analytics 2](assets/analytics_2.png)
+![Analytics 3](assets/analytics_3.png)
 
 ### 📄 Financial Report
 
 Automatically generated analytical report.
 
-![Report](assets/report.png)
+![Report 1](assets/report_1.png)
+![Report 2](assets/report_2.png)
 ![PDF Report](assets/pdf_report.png)
 
 ---
