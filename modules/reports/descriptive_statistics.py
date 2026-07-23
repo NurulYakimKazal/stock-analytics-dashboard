@@ -31,7 +31,7 @@ def compute_descriptive_statistics(stock_df):
         * 100
     )
 
-    df = df.dropna()
+    df = df.dropna(subset=["daily_return"])
 
     if df.empty:
         return pd.DataFrame()

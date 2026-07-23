@@ -112,7 +112,7 @@ def plot_return_histogram(stock_df):
             * 100
     )
 
-    df = df.dropna()
+    df = df.dropna(subset=["daily_return"])
 
     if df.empty:
         st.info(
