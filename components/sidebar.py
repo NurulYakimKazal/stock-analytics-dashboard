@@ -20,7 +20,7 @@ def render_date_range(stats):
     min_date = stats["earliest_date"]
     max_date = stats["latest_date"]
 
-    date_range = st.sidebar.date_input(
+    selected_range = st.sidebar.date_input(
         "Date range",
         min_value=min_date,
         max_value=max_date,
@@ -28,8 +28,8 @@ def render_date_range(stats):
     )
 
     # SAFE PARSING
-    if isinstance(date_range, tuple) and len(date_range) == 2:
-        start_date, end_date = date_range
+    if isinstance(selected_range, tuple) and len(selected_range) == 2:
+        start_date, end_date = selected_range
 
         # Save the last complete range
         st.session_state["last_valid_date_range"] = (

@@ -57,7 +57,7 @@ stock_df = fetch_stock_data(ticker)
 
 stats = compute_stock_time_range(stock_df)
 
-init_ui_state(stats)
+init_ui_state(stats, ticker)
 
 
 # =========================
